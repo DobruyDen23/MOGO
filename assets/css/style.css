@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+    *,
+    *:before, /* додає що небудь зверху елемента */
+    *:after /* додає що небу знизу елемента */{
+    box-sizing: border-box;
+
+}
+
+    h1,h2,h3,h4,h5,h6{
+        margin: 0;
+    }
+
+
+
+/* Container */ /* загальні налуштування для тла
+в якому заповнюємо інформацію, використовуємо
+його шаблон увесь проект */
+
+.container{
+    width: 100%; /* ширина */
+    max-width: 1200px; /* макс ширина */
+    margin: 0 auto;
+}
+
+
+
+/* Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url("../images/intro.jpg")
+    center no-repeat;
+    background-size: cover;
+}
+
+.intro__title{
+    color: white;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase; /* всі букви великі*/
+    line-height: 1;
+}
+
+.intro__title:after{
+    content: "";
+    display: block; /* створюємо геометричну фігуру */
+    width: 60px;
+    height: 3px;
+
+    background-color: white;
+    margin: 60px auto;
+
+}
+
+.intro__suptitle{
+    margin-bottom: 20px;
+    font-size:72px;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.intro__inner{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto; /* вивчити */
+
+    text-align: center;
+}
+
+
+/* header */
+
+.header{
+    padding-top: 30px; /* вивчити */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* позиціюнування елементу
+     "всередині - зовні
+     (1 буде "всередині" 2 "зовні")*/
+}
+.header__inner{
+    display: flex; /* робимо пропорційну відстань
+    між елементами */
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover /* питання */{
+    color: #fce38a;
+}
+
+.nav__link:hover:after,
+.nav__link.active:after{
+    opacity: 1;
+}
+
+.nav__link.active {
+    color: #fce38a;
+}
+
+
+/* Button */
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid white;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s
+    linear;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
+
+/* Slider */
+
+.slider{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.slider__inner{
+    display: flex;
+    justify-content: space-between; /* вивчити */
+}
+
+
+.slider__item{
+    width: 23%;
+    padding: 20px 0;
+    opacity: .7;
+    position: relative;
+
+    border-top: 3px solid;
+
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.slider__item.active{
+    opacity: 1;
+}
+
+.slider__item.active:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    background-color: #f38181;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+
+
+}
+
+.slider__num{
+    font-size: 24px;
+    font-weight: 700;
+}
