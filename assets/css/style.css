@@ -255,12 +255,22 @@ hr{
     background-size: cover;
 }
 
+.section__map{
+    background: url("../images/map-bg.jpg");
+    padding:40px 0;
+    background-size: cover;
+}
+
+
 .section__gray {
 background-color: #f8f8f8;
 }
 
 .section--clients{
-    background-color: #f5f5f5;
+    background: #f5f5f5
+    url("../images/clients-bg.jpg")
+    center no-repeat;
+    background-size: cover;
 }
 
 .section__header{
@@ -479,6 +489,7 @@ background-color: #f8f8f8;
 }
 
 .wedo__item{
+
     width: 50%;
 
 }
@@ -746,10 +757,271 @@ background-color: #f8f8f8;
 .clients{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 70px;
 }
 
 .client__item{
     width: 50%;
     padding: 0 45px 0 175px;
     position: relative;
+    margin-bottom: 60px;
+}
+
+.clients_photo{
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 1;
+}
+
+.clients__name{
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.clients__prof{
+    font-size: 15px;
+    color: #333333;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.clients__text{
+    font-size: 15px;
+    color: #999999;
+}
+
+.clients__text:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 15px 0;
+}
+
+/* Blog */
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__item {
+    width: 31%;
+}
+
+.blog__header{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.blog__photo{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.blog__date{
+    padding: 10px 20px;
+    background-color: #95e1d3;
+
+    font-size: 15px;
+    font-style: italic;
+    color: #f8f8f8;
+    font-weight: 300;
+    text-align: center;
+
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    z-index: 1;
+}
+
+.blog__date-day{
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+}
+
+.blog__content{
+    margin-bottom: 10px;
+}
+
+.blot__title{
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.blot__title a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.blot__title a:hover {
+    text-decoration: underline;
+}
+
+.blog__text{
+    font-size: 15px;
+    color: #999999;
+}
+
+.blog__footer {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 14px;
+
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+}
+
+.blog-stat__item{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.blog-stat i{
+    color: #95e1d3;
+}
+
+/* Map */
+
+.map{
+    text-align: center;
+}
+
+.map__title{
+    font-size: 24px;
+    color: indianred;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.map__title:after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: indianred;
+    width: 60px;
+    margin: 10px auto 0;
+}
+
+.map__title a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.map__title a:hover{
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.footer{
+    padding-top: 65px;
+
+    background-color: #f8f8f8;
+}
+
+.footer__inner{
+    padding-bottom: 65px;
+}
+
+.footer__logo{
+    margin-bottom: 30px;
+    font-size: 46px;
+    font-weight: 700;
+    color: #cccccc;
+
+}
+
+.footer__text{
+    font-size: 15px;
+    color: #999999;
+    margin-bottom: 30px;
+}
+
+.footer__social{
+    margin-bottom: 25px;
+}
+
+.footer__social-header{
+    padding-bottom: 15px;
+
+    font-size: 14px;
+    color: #333333;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.footer__social-header b{
+    font-size: 18px;
+}
+
+.footer__social-content{
+    padding-top: 15px;
+
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    color: #999999;
+}
+
+.footer__social-content a{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+
+    font-size: 18px;
+    color: #95e1d3;
+}
+
+/* Subscribe */
+
+.subscribe{
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+}
+
+.subscribe__input{
+    height: 40px;
+    padding: 12px;
+
+    background: #f8f8f8;
+    border: 1px solid #e7e7e7;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #cccccc;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.subscribe__btn{
+    height: 40px;
+
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: #95e1d3;
+    color: #f8f8f8;
+    border: none;
+    cursor: pointer;
 }
