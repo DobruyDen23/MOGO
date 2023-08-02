@@ -2,13 +2,16 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:300i;wght@400;700&display=swap"
           rel="stylesheet">
     <script src="https://kit.fontawesome.com/99d280ce9e.js" crossorigin="anonymous"></script>
-    <title>mogo</title>
+
+    <title>Mogo</title>
+
 </head>
 <body>
 
@@ -22,17 +25,24 @@
                     <a class="nav__link" href="#">Blog</a>
                     <a class="nav__link" href="#">Work</a>
                     <a class="nav__link" href="#">Contact</a>
+                    <a class="nav__link" href="#">
+                        <i class="fas fa-shopping-cart"> </i>
+                    </a>
+                    <a class="nav__link" href="#">
+                        <i class="fas fa-search"> </i>
+                    </a>
                 </nav>
             </div>
         </div>
     </header>
 
+    <div class="page">
 
                 <div class="intro">
                     <div class="container">
                         <div class="intro__inner">
                             <h2 class="intro__suptitle">Creative Template</h2>
-                            <h1 class="intro__title">Welcome to MoGo</h1>
+                            <h1 class="intro__title">Welcome <br>to MoGo</h1>
 
                             <a class="btn" href="#">Learn about</a>
                         </div>
@@ -44,19 +54,19 @@
                         <div class="slider__inner">
                             <div class="slider__item active">
                                 <span class="slider__num">01</span>
-                                Intro
+                                <span class="slider__text">Intro</span>
                             </div>
                             <div class="slider__item">
                                 <span class="slider__num">02</span>
-                                Work
+                                <span class="slider__text">Work</span>
                             </div>
                             <div class="slider__item">
                                 <span class="slider__num">03</span>
-                                About
+                                <span class="slider__text">About</span>
                             </div>
                             <div class="slider__item">
                                 <span class="slider__num">04</span>
-                                Contacts
+                                <span class="slider__text">Contact</span>
                             </div>
                         </div>
                     </div>
@@ -151,7 +161,7 @@
             </div>
 
             <div class="services">
-                <div class="services__item">
+                <div class="services__item services__item--border">
                     <img class="services__icon"
                     src="assets/images/icon/photography.png" alt="">
 
@@ -160,7 +170,7 @@
                         sed do eiusmod tempor.</div>
                 </div>
 
-                <div class="services__item">
+                <div class="services__item services__item--border">
                     <img class="services__icon"
                          src="assets/images/icon/webdesign.png" alt="">
 
@@ -169,7 +179,7 @@
                         sed do eiusmod tempor.</div>
                 </div>
 
-                <div class="services__item">
+                <div class="services__item services__item--border">
                     <img class="services__icon"
                          src="assets/images/icon/creativity.png" alt="">
 
@@ -177,38 +187,35 @@
                     <div class="services__text">Lorem ipsum dolor sot amet, consectetur adipiscing elit,
                         sed do eiusmod tempor.</div>
                 </div>
-            </div>
 
-            <hr>
+                    <div class="services__item">
+                        <img class="services__icon"
+                             src="assets/images/icon/seo.png" alt="">
 
-            <div class="services">
-                <div class="services__item">
-                    <img class="services__icon"
-                         src="assets/images/icon/seo.png" alt="">
+                        <div class="services__title">ceo</div>
+                        <div class="services__text">Lorem ipsum dolor sot amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor.</div>
+                    </div>
 
-                    <div class="services__title">ceo</div>
-                    <div class="services__text">Lorem ipsum dolor sot amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor.</div>
-                </div>
+                    <div class="services__item">
+                        <img class="services__icon"
+                             src="assets/images/icon/css-html.png" alt="">
 
-                <div class="services__item">
-                    <img class="services__icon"
-                         src="assets/images/icon/css-html.png" alt="">
+                        <div class="services__title">css/html</div>
+                        <div class="services__text">Lorem ipsum dolor sot amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor.</div>
+                    </div>
 
-                    <div class="services__title">css/html</div>
-                    <div class="services__text">Lorem ipsum dolor sot amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor.</div>
-                </div>
+                    <div class="services__item">
+                        <img class="services__icon"
+                             src="assets/images/icon/digital.png" alt="">
 
-                <div class="services__item">
-                    <img class="services__icon"
-                         src="assets/images/icon/digital.png" alt="">
+                        <div class="services__title">digital</div>
+                        <div class="services__text">Lorem ipsum dolor sot amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor.</div>
+                    </div>
+            </div> <!-- Services -->
 
-                    <div class="services__title">digital</div>
-                    <div class="services__text">Lorem ipsum dolor sot amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor.</div>
-                </div>
-            </div>
 
         </div> <!-- /.container -->
     </section> <!-- Services -->
@@ -248,7 +255,7 @@
 
             <div class="wedo">
                 <div class="wedo__item">
-                    <img src="assets/images/wedo.jpg" alt="">
+                    <img class="wedo__img" src="assets/images/wedo.jpg" alt="">
                 </div>
 
                 <div class="wedo__item">
@@ -434,22 +441,22 @@
 
             <div class="logos">
                 <div class="logos__item">
-                    <img src="assets/images/logos/1.png" alt="">
+                    <img class="logos__img" src="assets/images/logos/1.png" alt="">
                 </div>
                 <div class="logos__item">
-                    <img src="assets/images/logos/2.png" alt="">
+                    <img class="logos__img" src="assets/images/logos/2.png" alt="">
                 </div>
                 <div class="logos__item">
-                    <img src="assets/images/logos/3.png" alt="">
+                    <img class="logos__img" src="assets/images/logos/3.png" alt="">
                 </div>
                 <div class="logos__item">
-                    <img src="assets/images/logos/4.png" alt="">
+                    <img class="logos__img" src="assets/images/logos/4.png" alt="">
                 </div>
                 <div class="logos__item">
-                    <img src="assets/images/logos/5.png" alt="">
+                    <img class="logos__img" src="assets/images/logos/5.png" alt="">
                 </div>
                 <div class="logos__item">
-                    <img src="assets/images/logos/6.png" alt="">
+                    <img class="logos__img" src="assets/images/logos/6.png" alt="">
                 </div>
             </div>
 
@@ -738,7 +745,7 @@
         <div class="container">
 
             <div class="footer__inner">
-                <div class="footer__col">
+                <div class="footer__col footer__col--first">
                     <div class="footer__logo">MoGo</div>
                     <div class="footer__text">Lorem ipsum dolor sot amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -766,14 +773,82 @@
                         <input class="subscribe__input" type="email" name="name" placeholder="Your Email...">
                         <button class="subscribe__btn" type="submit">SUBSCRIBE</button>
                     </form>
+                </div><!-- footer__col -->
+                <div class="footer__col footer__col--second">
+                    <div class="footer__title">blogs</div>
+
+                    <div class="blogs">
+                        <div class="blogs__item">
+                            <img class="blogs__img" src="assets/images/blog/1.jpg" alt="">
+                            <div class="blogs__content">
+                                <a class="blogs__title" href="#">Lorem ipsum dolor sot amet, consectetur adipiscing</a>
+                                <div class="blogs__date">Jan 9 2016</div>
+                            </div>
+                        </div>
+
+                        <div class="blogs__item">
+                            <img class="blogs__img" src="assets/images/blog/2.jpg" alt="">
+                            <div class="blogs__content">
+                                <a class="blogs__title" href="#">Lorem ipsum dolor </a>
+                                <div class="blogs__date">Jan 9 2016</div>
+                            </div>
+                        </div>
+
+                        <div class="blogs__item">
+                            <img class="blogs__img" src="assets/images/blog/3.jpg" alt="">
+                            <div class="blogs__content">
+                                <a class="blogs__title" href="#">Lorem ipsum dolor sot amet, consectetur adipiscing</a>
+                                <div class="blogs__date">Jan 9 2016</div>
+                            </div>
+                        </div>
+
+                    </div> <!-- Blogs -->
+                </div>
+                <div class="footer__col footer__col--third">
+                    <div class="footer__title">instagram</div>
+
+                    <div class="instagram">
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/1.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/2.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/3.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/4.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/5.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/6.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/7.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/8.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/9.jpg" alt="">
+                        </a>
+                    </div>
                 </div>
 
             </div><!-- /.footer__inner -->
+
+            <div class="copyright">
+                @ 2016 MoGo free PSD template by <span>Laaqiq</span>
+            </div>
 
         </div><!-- /.container -->
     </footer>
 
 
+    </div><!-- /.page -->
 
 
 
